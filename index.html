@@ -1,1 +1,113 @@
- 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页二维码 Chrome 扩展</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: #f5f5f5;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .install-steps {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        
+        .button:hover {
+            background: #0056b3;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>网页二维码 Chrome 扩展</h1>
+        <p>一个优雅的 Chrome 扩展，让分享网页变得简单</p>
+        <a href="https://github.com/youkeyou110/wangyeerweima" class="button">在 GitHub 上查看</a>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <h3>双模式支持</h3>
+            <p>支持页面内嵌和弹出窗口两种使用方式，满足不同场景需求</p>
+        </div>
+        <div class="feature-card">
+            <h3>优雅设计</h3>
+            <p>简洁的界面设计，流畅的动画效果，提供极致的用户体验</p>
+        </div>
+        <div class="feature-card">
+            <h3>便捷分享</h3>
+            <p>一键生成当前网页的二维码，扫码即可在移动设备上打开</p>
+        </div>
+    </div>
+
+    <div class="install-steps">
+        <h2>安装步骤</h2>
+        <ol>
+            <li>下载本项目代码</li>
+            <li>打开 Chrome 扩展管理页面 (chrome://extensions/)</li>
+            <li>开启开发者模式</li>
+            <li>点击"加载已解压的扩展程序"</li>
+            <li>选择项目目录即可完成安装</li>
+        </ol>
+    </div>
+
+    <h2>使用方法</h2>
+    <div class="usage">
+        <h3>页面内嵌模式</h3>
+        <p>浏览网页时，在右下角可以看到网站图标，点击即可展开二维码</p>
+        
+        <h3>弹出窗口模式</h3>
+        <p>点击浏览器工具栏中的扩展图标，即可在弹出窗口中查看二维码</p>
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666;">
+        <p>Made with ❤️ by 你的名字</p>
+    </footer>
+</body>
+</html> 
