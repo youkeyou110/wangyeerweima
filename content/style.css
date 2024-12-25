@@ -1,0 +1,53 @@
+.qr-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.qr-favicon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.qr-favicon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.qr-wrapper {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.qr-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#qrcode {
+  width: 200px;
+  height: 200px;
+}
+
+.site-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+} 
